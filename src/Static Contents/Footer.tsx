@@ -48,13 +48,13 @@ export default function Footer() {
           © 2025 NexCab. All rights reserved.
         </p>
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <a href="#" className="p-3 rounded-full border-2 border-white hover:border-[#008C99] hover:text-[#008C99] transition duration-300">
+          <a href="#" className="p-2 rounded-full border-2 border-gray-600 text-gray-600 hover:border-[#008C99] hover:text-[#008C99] transition duration-300">
             <FaFacebookF />
           </a>
-          <a href="#" className="p-3 rounded-full border-2 border-white hover:border-[#008C99] hover:text-[#008C99] transition duration-300">
+          <a href="#" className="p-2 rounded-full border-2 border-gray-600 text-gray-600 hover:border-[#008C99] hover:text-[#008C99] transition duration-300">
             <FaYoutube />
           </a>
-          <a href="#" className="p-3 rounded-full border-2 border-white hover:border-[#008C99] hover:text-[#008C99] transition duration-300">
+          <a href="#" className="p-2 rounded-full border-2 border-gray-600 text-gray-600 hover:border-[#008C99] hover:text-[#008C99] transition duration-300">
             <FaGithub />
           </a>
         </div>

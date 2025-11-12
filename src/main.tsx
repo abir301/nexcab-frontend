@@ -2,7 +2,7 @@ import './index.css'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {createBrowserRouter,RouterProvider,} from 'react-router-dom';
-import HomeContent from './Public Pages/HomeContent';
+import HomeContent from './Home Content/HomeContent';
 import Home from './Static Contents/Home';
 import Faq from './Public Pages/Faq';
 import Contact from './Public Pages/Contact';
