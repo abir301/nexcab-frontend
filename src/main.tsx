@@ -1,7 +1,10 @@
 import './index.css'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom';
+import { store } from './redux/store';
+import { AuthProvider } from './context/AuthContext';
 import HomeContent from './Home Content/HomeContent';
 import Home from './Static Contents/Home';
 import Faq from './Public Pages/Faq';
@@ -10,6 +13,8 @@ import AboutUs from './Public Pages/AboutUs';
 import Features from './Public Pages/Features';
 import { Login } from './Public Pages/Login';
 import { Register } from './Public Pages/Register';
+import Blocked from './status/Blocked';
+import Suspended from './status/Suspended';
 
 
 const router = createBrowserRouter([
@@ -40,16 +45,29 @@ const router = createBrowserRouter([
       {
         path: 'login',
         element: <Login />,
-      }, {
+      },       
+      {
         path: 'register',
         element: <Register />,
       },
     ],
   },
+  {
+    path: '/status/blocked',
+    element: <Blocked />,
+  },
+  {
+    path: '/status/suspended',
+    element: <Suspended />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </Provider>
   </React.StrictMode>,
 );

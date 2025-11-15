@@ -22,7 +22,7 @@ export function Register() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-[600px] bg-gray-50">
+        <div className="flex flex-col items-center justify-center h-[700px] bg-gray-50">
             <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
                 <div className="text-center mb-6">
                     <h1 className="text-3xl font-bold text-gray-800">Create Account</h1>
